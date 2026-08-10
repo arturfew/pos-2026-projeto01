@@ -1,0 +1,57 @@
+body {
+  font-family: Arial;
+  margin: 0;
+  background: #eee;
+  color: #222;
+}
+
+header {
+  background: #000;
+  color: white;
+  padding: 15px;
+}
+
+h1 {
+  color: #d00000;
+}
+
+.container {
+  padding: 20px;
+}
+
+.team-card {
+  background: white;
+  padding: 15px;
+}
+
+.team-badge {
+  width: 60px;
+}
+
+#players {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.player-image {
+  width: 50px;
+  height: 50px;
+}
+
+.player-image img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+}
+
+
+.error {
+  color: red;
+}
+
+footer {
+  background: #000;
+  color: white;
+  padding: 15px;
+}
