@@ -1,8 +1,8 @@
 import './style.css';
 
 import {
-  getFlamengo,
-  getFlamengoPlayers,
+  getLiverpool,
+  getLiverpoolPlayers,
   getPlayerDetails
 } from './api/api.js';
 
@@ -36,12 +36,12 @@ document.querySelector('#app').innerHTML = `
     <section>
 
       <h2 class="section-title">
-        🏆 Liverpool
+         Liverpool
       </h2>
 
       <div id="team">
         <p class="loading">
-          Carregando informações do Flamengo...
+          Carregando informações do Liverpool...
         </p>
       </div>
 
@@ -50,7 +50,7 @@ document.querySelector('#app').innerHTML = `
     <section>
 
       <h2 class="section-title">
-        👕 Jogadores
+         Jogadores
       </h2>
 
       <div id="players">
@@ -64,7 +64,7 @@ document.querySelector('#app').innerHTML = `
     <section>
 
       <h2 class="section-title">
-        📊 Detalhes do jogador
+         Detalhes do jogador
       </h2>
 
       <div id="player-details">
@@ -98,7 +98,7 @@ async function loadFlamengo() {
     const team = await getFlamengo();
 
     if (!team) {
-      throw new Error('Flamengo não encontrado.');
+      throw new Error('Liverpool não encontrado.');
     }
 
     renderTeam(team, teamContainer);
@@ -108,7 +108,7 @@ async function loadFlamengo() {
 
     showError(
       teamContainer,
-      'Não foi possível carregar o Flamengo.'
+      'Não foi possível carregar o Liverpool.'
     );
   }
 }
@@ -117,7 +117,7 @@ async function loadPlayers() {
   try {
     showLoading(playersContainer);
 
-    const players = await getFlamengoPlayers();
+    const players = await getLiverpoolPlayers();
 
     renderPlayers(
       players,
@@ -162,5 +162,5 @@ async function selectPlayer(player) {
   }
 }
 
-loadFlamengo();
+loadLiverpool();
 loadPlayers();
