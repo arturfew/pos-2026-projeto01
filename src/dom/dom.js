@@ -20,7 +20,7 @@ export function renderTeam(team, container) {
         </p>
 
         <p>
-           ${team.strLocation || 'Brasil'}
+           ${team.strLocation || 'inglaterra'}
         </p>
       </div>
 
