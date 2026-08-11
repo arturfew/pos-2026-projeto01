@@ -16,11 +16,11 @@ export function renderTeam(team, container) {
         </p>
 
         <p>
-          🏟️ ${team.strStadium || 'Estádio não informado'}
+           ${team.strStadium || 'Estádio não informado'}
         </p>
 
         <p>
-          📍 ${team.strLocation || 'Brasil'}
+           ${team.strLocation || 'Brasil'}
         </p>
       </div>
 
@@ -57,7 +57,7 @@ export function renderPlayers(players, container, onSelect) {
                 alt="${player.strPlayer}"
               >
             `
-            : '⚽'
+            : ''
         }
 
       </div>
@@ -101,7 +101,7 @@ export function renderPlayerDetails(player, container) {
           `
           : `
             <div class="details-placeholder">
-              ⚽
+              
             </div>
           `
       }
